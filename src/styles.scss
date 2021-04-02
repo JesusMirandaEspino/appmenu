@@ -6,6 +6,21 @@
 
 // Feel free to copy&paste color codes to your application */
 
+$color-light: #fff4b6;  //*used
+$color-dark: #024E60;
+
+
+$color-icon: #E9A711;
+
+$letter-light-blue:#A8DDE9;
+$letter-dark-blue: #010C31; 
+$letter-light-white:#FFE9B6;
+$letter-light-gold: #FFEA6D;
+
+
+$letter-dark-blue: #010C31; 
+
+
 $color-principal-0: #091E69;	// Main Primary color */
 $color-principal-1: #1D399E; ////*Used
 $color-principal-2: #0F277F;
@@ -25,7 +40,6 @@ $color-light-1: #4BA2B7;
 $color-light-2: #298DA4;
 $color-light-3: #03647A;
 $color-light-4: #024E60;
-$color-light-5: #fff4b6;  //*used
 $color-light-6: #b1bded;  //*Used
 
 $color-dark-0: #26086A;	// Main Secondary color (1) */
@@ -36,7 +50,7 @@ $color-dark-4: #100132;
 
 
 $color-gold-0: #9B8400;	// Main Secondary color (2) */
-$color-gold-1: #E9CA11;
+
 $color-gold-2: #BBA000;
 $color-gold-3: #766500;
 $color-gold-4: #493E00;
@@ -82,6 +96,7 @@ $title-big:38px;
 //--------------------------------------------//
 //--------------full size letters-------------//
 $note-super:20px;
+$letter-meidum:26px;
 $letters-super:30px;
 $subtitle-super:34px;
 $title-super:42px;
@@ -131,13 +146,61 @@ $space-super:34px;
 //----------------------------------------//
 //TODO GENERALS--------------------------//
 
+body{
+  background-color:$color-light;
+  i{
+    color:$color-icon;
+  }
+}
+
+header{
+  background-color:$color-dark;
+}
+
+main{
+  color:$color-principal-4;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+footer{
+  color:$letter-light-white;
+  font-family: 'Roboto', sans-serif;
+  background-color:$color-dark;
+}
+
+
+
+
+//------------------------------//
+//-------------HEADER-----------//
+//------------------------------//
+
+h1{
+  font-family: 'Dela Gothic One', cursive;
+  font-size: $title-super;
+  color: $letter-light-blue;
+}
+
+nav{
+  font-family: 'Roboto', sans-serif;
+  font-size: $letter-meidum;
+  a{
+    color:$letter-light-gold;
+  }
+}
 
 .user-menu{
-
   position:fixed;
   z-index: 99;
   top:0;
   right:0;
   @include transitionbasicslow;
-
 }
+
+
+//------------------------------------------------------//
+
+
+
+
+
