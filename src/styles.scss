@@ -13,12 +13,12 @@ $color-dark: #024E60;
 $color-icon: #E9A711;
 
 $letter-light-blue:#A8DDE9;
-$letter-dark-blue: #010C31; 
+$letter-dark-blue: #010C31;
 $letter-light-white:#FFE9B6;
 $letter-light-gold: #FFEA6D;
 
 
-$letter-dark-blue: #010C31; 
+$letter-dark-blue: #010C31;
 
 
 $color-principal-0: #091E69;	// Main Primary color */
@@ -171,22 +171,42 @@ footer{
 
 
 
-//------------------------------//
-//-------------HEADER-----------//
-//------------------------------//
+
+//-------------------------------------------//
+//-------------------HEADER------------------//
+//-------------------------------------------//
 
 h1{
   font-family: 'Dela Gothic One', cursive;
   font-size: $title-super;
   color: $letter-light-blue;
+  margin-top:$space-medium;
+  margin-bottom: $space-medium;
 }
 
 nav{
   font-family: 'Roboto', sans-serif;
   font-size: $letter-meidum;
+
+
   a{
     color:$letter-light-gold;
+    margin: auto $space-small;
   }
+
+  .menupc{
+
+  @include flexboxbasic;
+    margin-top: $space-medium;
+    margin-bottom: $space-super;
+
+    ul{
+      margin: auto $space-small ;
+    }
+
+  }
+
+
 }
 
 .user-menu{
@@ -198,9 +218,59 @@ nav{
 }
 
 
-//------------------------------------------------------//
+//-----------------------HEADER------------------------//
 
 
+//-------------------------------------------//
+//-------------------MAIN--------------------//
+//-------------------------------------------//
+.main-container{
+  margin-top: $space-super;
+
+  .search-container{
+    @include flexboxbasic;
+
+    form{
+      @include  flexboxcolumn;
+
+      input{
+          color:$color-principal-4;
+          font-family: 'Noto Sans JP', sans-serif;
+          border-radius: $supermin;
+          border: 3px solid $color-dark;
+          background-color: rgba( $letter-light-blue, 0.3 );
+          margin-bottom:$space-medium ;
+      }
 
 
+      button{
+        border-radius: $supermin;
+        border-top: 3px solid $color-dark;
+        border-bottom: 3px solid $color-dark;
+        padding: $supermin $min;
+        background-color: rgba( $letter-light-gold, 0.3 );
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        color:$color-dark;
+        @include transitionbasic;
+        margin-bottom: $space-super;
 
+        &:hover{
+          border-top: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+          border-left: 3px solid $color-dark;
+          border-right: 3px solid $color-dark;
+          background-color:  $color-dark;
+          color:$letter-light-gold;
+        }
+
+
+      }
+
+    }
+
+  }
+
+}
+
+//-----------------------MAIN------------------------//
