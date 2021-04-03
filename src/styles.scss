@@ -271,6 +271,118 @@ nav{
 
   }
 
+
+  .product-list-tittle{
+    margin-top: $space-super;
+    margin-bottom: $space-super;
+
+      h2{
+        color:$color-principal-4;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: $subtitle-super;
+      }
+
+  }
+
+  .product-list-container{
+    @include flexboxbasic;
+    width:95%;
+
+    p{
+      font-size: $note-super;
+    }
+
+    h3{
+      font-size: $letter-meidum;
+    }
+
+    i{
+      font-size: $note-super;
+    }
+
+    .product-image{
+      img{
+        width:80%;
+      }
+    }
+
+    .product-info-container{
+      margin: $space-medium   auto;
+
+        .tags{
+          margin: $space-small  auto;
+        }
+
+        .producto-title{
+          margin: $space-small  auto;
+        }
+
+        .product-price{
+          margin: $space-small  auto;
+        }
+
+    }
+  }
 }
 
+
+.more-products-container{
+  button{
+        border-radius: $supermin;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        padding: $supermin $min;
+        background-color: rgba( $letter-light-gold, 0.3 );
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        @include transitionbasic;
+        margin-bottom: $space-super;
+
+        &:hover{
+          border-top: 3px solid $color-dark;
+          border-bottom: 3px solid $color-dark;
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+
+        }
+
+
+      a{
+        color:$color-dark;
+      }
+
+
+  }
+}
+
+
 //-----------------------MAIN------------------------//
+
+
+
+
+
+
+//-------------------------------------------//
+//------------------footer-------------------//
+//-------------------------------------------//
+.footer{
+  margin-top: $space-super;
+
+    p{
+      margin-bottom: $space-small;
+    }
+
+    h2{
+      font-size: $letter-meidum;
+      margin-bottom: $space-super;
+    }
+
+    .author{
+      margin-top: $space-super;
+
+    }
+}
+
+
+//----------------------footer-----------------------//
