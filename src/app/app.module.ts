@@ -8,6 +8,9 @@ import { MainComponent } from './includes/main/main.component';
 import { FooterComponent } from './includes/footer/footer.component';
 
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,8 @@ import { FooterComponent } from './includes/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
