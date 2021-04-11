@@ -192,7 +192,34 @@ nav{
   a{
     color:$letter-light-gold;
     margin: auto $space-small;
+    border-bottom: 2px solid transparent ;
+    @include transitionbasic;
+
+    &:hover{
+      border-bottom: 2px solid $color-icon;
+      color:$color-icon;
+
+    }
+
+    &.actived{
+      border-bottom: 2px solid $color-icon;
+      color:$color-icon;
+    }
+
   }
+
+    .icon-nav-pc{
+      @include transitionbasic;
+      cursor:pointer;
+        &:hover{
+          color:$letter-light-gold;
+
+        }
+
+        &.actived{
+          color:$letter-light-gold;
+        }
+    }
 
   .menupc{
 
@@ -200,9 +227,11 @@ nav{
     margin-top: $space-medium;
     margin-bottom: $space-super;
 
-    ul{
+    li{
       margin: auto $space-small ;
     }
+
+
 
   }
 
@@ -211,10 +240,20 @@ nav{
 
 .user-menu{
   position:fixed;
+  margin-top: -500px;
   z-index: 99;
   top:0;
   right:0;
   @include transitionbasicslow;
+
+  &.activated{
+    margin-top: 0px;
+  }
+
+      li{
+        margin:  $space-small auto;
+      }
+
 }
 
 
