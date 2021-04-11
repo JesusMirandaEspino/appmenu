@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
+import { map, tap, catchError }  from 'rxjs/operators';
+import {  FoodResponse  } from '../interfaces/foodresponse';
 
 @Injectable({
   providedIn: 'root'
@@ -30,8 +32,8 @@ export class ApifoodService {
 
   }*/
 
-getfood = () => {
-  return this.http.get( this.baseUrl );
+getfood(): Observable< FoodResponse[]>  {
+  return this.http.get< FoodResponse[]>( this.baseUrl ).pipe( map( resp => resp ), catchError(err => of([]) ) );
 }
 
 
