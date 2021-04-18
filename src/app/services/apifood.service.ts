@@ -32,8 +32,8 @@ export class ApifoodService {
 
   }*/
 
-getfood(): Observable< FoodResponse[]>  {
-  return this.http.get< FoodResponse[]>( this.baseUrl ).pipe( map( resp => resp ), catchError(err => of([]) ) );
+getfood(): Observable< FoodResponse>  {
+  return this.http.get< FoodResponse>( this.baseUrl ).pipe( map( (resp) => resp ));
 }
 
 

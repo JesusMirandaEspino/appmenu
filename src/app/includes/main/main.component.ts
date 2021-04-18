@@ -9,7 +9,7 @@ import {  FoodResponse,  MenuItem  } from '../../interfaces/foodresponse';
 })
 export class MainComponent implements OnInit {
 
-  food: FoodResponse[] = [];
+  menuItems: MenuItem[] = [];
 
   constructor( private foodServices: ApifoodService  ) { }
 
@@ -17,8 +17,10 @@ export class MainComponent implements OnInit {
 
 
     this.foodServices.getfood().subscribe(  (food ) => {
-      this.food = food;
-      console.log(   food );
+
+      this.menuItems = food.menuItems;
+
+      console.log(  this.menuItems[0].title );
     } );
 
   }
