@@ -20,7 +20,7 @@ export class MainComponent implements OnInit {
 
       this.menuItems = food.menuItems;
 
-      console.log(  this.menuItems[0].title );
+      console.log(  this.menuItems );
     } );
 
   }

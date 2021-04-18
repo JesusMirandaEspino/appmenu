@@ -17,13 +17,13 @@
         <h2> Productos </h2>
       </div>
 
-      <div class="col-full-3 product-list-container"   >
+      <div class="col-full-3 product-list-container"  *ngFor="let item of menuItems " >
 
         <ul>
           <li><!--  Product list   --->
 
             <div class="product-image">
-              <img src="../../../assets/img/producto1.jpg" alt="No image">
+              <img [src]=" item.image " alt="No image">
             </div>
 
             <div class="product-info-container">
@@ -31,14 +31,14 @@
                 <div class="product-info"><!--  Container 1 info   --->
 
                   <div class="tags">
-                      <p>Descuentos:</p>
-                      <p>Envio:</p>
+                      <p>Descuentos:  {{  (item.id * 1.5 )  / 100000  | number:'1.2-2'  }} %  </p>
+                      <p>Envio: Si </p>
                   </div>
 
                   <div  class="producto-title" >
                     <div class="product-name" >
-                        <h3>Nombre del Producto:</h3>
-                        <p>Restaurante</p>
+                        <h3>Nombre del Producto:  {{ item.title }}  </h3>
+                        <p>Restaurante:  {{ item.restaurantChain }} </p>
                     </div>
                   </div>
 
@@ -56,7 +56,7 @@
 
                 <div class="product-price" ><!--  Container 2 info   --->
 
-                    <h3>Precio:</h3>
+                    <h3>Precio: $ {{  item.id  / 100000 | number:'1.2-2' }}   </h3>
 
                 </div>
 
