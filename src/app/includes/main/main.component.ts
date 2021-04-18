@@ -25,4 +25,13 @@ export class MainComponent implements OnInit {
 
   }
 
+
+  starNumber(  id: number ): number {
+    const star = id  / 100000;
+    const resultstar =  Math.round(star);
+    return resultstar;
+
+  }
+
+
 }
