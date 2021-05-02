@@ -205,7 +205,6 @@ nav{
       border-bottom: 2px solid $color-icon;
       color:$color-icon;
     }
-
   }
 
     .icon-nav-pc{
@@ -213,7 +212,6 @@ nav{
       cursor:pointer;
         &:hover{
           color:$letter-light-gold;
-
         }
 
         &.actived{
@@ -230,9 +228,6 @@ nav{
     li{
       margin: auto $space-small ;
     }
-
-
-
   }
 
 
@@ -249,15 +244,17 @@ nav{
   &.activated{
     margin-top: 0px;
   }
-
       li{
         margin:  $space-small auto;
       }
 
 }
-
-
 //-----------------------HEADER------------------------//
+
+
+
+
+
 
 
 //-------------------------------------------//
@@ -302,8 +299,6 @@ nav{
           background-color:  $color-dark;
           color:$letter-light-gold;
         }
-
-
       }
 
     }
@@ -325,6 +320,431 @@ nav{
 
   .product-list-container{
     @include flexboxbasic;
+    width:95%;
+
+    p{
+      font-size: $note-super;
+    }
+
+    h3{
+      font-size: $letter-meidum;
+    }
+
+    i{
+      font-size: $note-super;
+    }
+
+    .product-image{
+        max-height:300px;
+        max-height:301px;
+      img{
+        width:80%;
+        max-height:300px;
+        max-height:301px;
+      }
+    }
+
+    .product-info-container{
+      margin: $space-medium   auto;
+
+        .tags{
+          margin: $space-small  auto;
+        }
+
+        .producto-title{
+          margin: $space-small  auto;
+        }
+
+        .product-price{
+          margin: $space-small  auto;
+        }
+
+    }
+  }
+}
+
+
+.more-products-container{
+  button{
+        border-radius: $supermin;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        padding: $supermin $min;
+        background-color: rgba( $letter-light-gold, 0.3 );
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        @include transitionbasic;
+        margin-bottom: $space-super;
+
+        &:hover{
+          border-top: 3px solid $color-dark;
+          border-bottom: 3px solid $color-dark;
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+
+        }
+
+      a{
+        color:$color-dark;
+        font-size: $note-super;
+
+      }
+  }
+}
+
+//-----------------------MAIN------------------------//
+
+
+
+
+//-------------------------------------------//
+//------------------footer-------------------//
+//-------------------------------------------//
+.footer{
+  margin-top: $space-super;
+
+    p{
+      margin-bottom: $space-small;
+    }
+
+    h2{
+      font-size: $letter-meidum;
+      margin-bottom: $space-super;
+    }
+
+    .author{
+      margin-top: $space-super;
+    }
+}
+//----------------------footer-----------------------//
+
+
+
+
+
+
+
+//TODO MEDIA QUERIES
+
+
+//--------------------------------------------------//
+//------------------Media querires------------------//
+//--------------------------------------------------//
+
+
+
+
+
+@media(max-width:320px)
+{
+//-------------------------------------------//
+//-------------------HEADER------------------//
+//-------------------------------------------//
+
+h1{
+  font-size: $title-small;
+  color: $letter-light-blue;
+  margin-top:$space-medium;
+  margin-bottom: $space-medium;
+}
+
+nav{
+  font-size: $letter-meidum;
+
+
+  a{
+    margin: auto $space-small;
+    border-bottom: 2px solid transparent ;
+
+    &:hover{
+      border-bottom: 2px solid $color-icon;
+      color:$color-icon;
+
+    }
+
+  }
+
+  .menupc{
+
+    margin-top: $space-medium;
+    margin-bottom: $space-super;
+
+    li{
+      margin: auto $space-small ;
+    }
+
+
+
+  }
+}
+
+.user-menu{
+  position:fixed;
+  margin-top: -500px;
+  z-index: 99;
+  top:0;
+  right:0;
+
+  &.activated{
+    margin-top: 0px;
+  }
+      li{
+        margin:  $space-small auto;
+      }
+}
+
+//-----------------------HEADER------------------------//
+
+
+//-------------------------------------------//
+//-------------------MAIN--------------------//
+//-------------------------------------------//
+.main-container{
+  margin-top: $space-super;
+
+  .search-container{
+    form{
+
+      input{
+
+          border-radius: $supermin;
+          border: 3px solid $color-dark;
+          margin-bottom:$space-medium ;
+      }
+
+
+      button{
+        border-radius: $supermin;
+        border-top: 3px solid $color-dark;
+        border-bottom: 3px solid $color-dark;
+        padding: $supermin $min;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        color:$color-dark;
+        margin-bottom: $space-super;
+
+        &:hover{
+          border-top: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+  .product-list-tittle{
+    margin-top: $space-super;
+    margin-bottom: $space-super;
+
+      h2{
+        font-size: $title-small;
+      }
+
+  }
+
+  .product-list-container{
+    width:95%;
+
+    p{
+      font-size: $letters-small;
+    }
+
+    h3{
+      font-size: $subtitle-small;
+    }
+
+    i{
+      font-size: $letters-small;
+    }
+
+    .product-image{
+      img{
+        width:80%;
+      }
+    }
+
+    .product-info-container{
+      margin: $space-medium   auto;
+
+        .tags{
+          margin: $space-small  auto;
+        }
+
+        .producto-title{
+          margin: $space-small  auto;
+        }
+
+        .product-price{
+          margin: $space-small  auto;
+        }
+    }
+  }
+}
+
+
+.more-products-container{
+  button{
+        margin-bottom: $space-medium;
+
+        a{
+          font-size:$note-small;
+        }
+  }
+}
+
+//-----------------------MAIN------------------------//
+
+
+
+
+
+
+//-------------------------------------------//
+//------------------footer-------------------//
+//-------------------------------------------//
+.footer{
+  margin-top: $space-small;
+
+    p{
+      margin-bottom: $space-small;
+      font-size:$note-small;
+    }
+
+    h2{
+      font-size: $letters-small;
+      margin-bottom: $space-small;
+    }
+
+    .author{
+      margin-top: $space-small;
+    }
+}
+//----------------------footer-----------------------//
+
+
+}
+
+
+
+
+
+
+@media(min-width:321px) and (max-width:468px)
+{
+//-------------------------------------------//
+//-------------------HEADER------------------//
+//-------------------------------------------//
+
+h1{
+  font-size: $title-super;
+  color: $letter-light-blue;
+  margin-top:$space-medium;
+  margin-bottom: $space-medium;
+}
+
+nav{
+  font-size: $letter-meidum;
+
+
+  a{
+    margin: auto $space-small;
+    border-bottom: 2px solid transparent ;
+
+    &:hover{
+      border-bottom: 2px solid $color-icon;
+      color:$color-icon;
+
+    }
+
+  }
+
+  .menupc{
+
+    margin-top: $space-medium;
+    margin-bottom: $space-super;
+
+    li{
+      margin: auto $space-small ;
+    }
+
+
+
+  }
+}
+
+.user-menu{
+  position:fixed;
+  margin-top: -500px;
+  z-index: 99;
+  top:0;
+  right:0;
+
+  &.activated{
+    margin-top: 0px;
+  }
+      li{
+        margin:  $space-small auto;
+      }
+}
+
+//-----------------------HEADER------------------------//
+
+
+//-------------------------------------------//
+//-------------------MAIN--------------------//
+//-------------------------------------------//
+.main-container{
+  margin-top: $space-super;
+
+  .search-container{
+    form{
+
+      input{
+
+          border-radius: $supermin;
+          border: 3px solid $color-dark;
+          margin-bottom:$space-medium ;
+      }
+
+
+      button{
+        border-radius: $supermin;
+        border-top: 3px solid $color-dark;
+        border-bottom: 3px solid $color-dark;
+        padding: $supermin $min;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        color:$color-dark;
+        margin-bottom: $space-super;
+
+        &:hover{
+          border-top: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+  .product-list-tittle{
+    margin-top: $space-super;
+    margin-bottom: $space-super;
+
+      h2{
+        font-size: $subtitle-super;
+      }
+
+  }
+
+  .product-list-container{
     width:95%;
 
     p{
@@ -371,24 +791,15 @@ nav{
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
         padding: $supermin $min;
-        background-color: rgba( $letter-light-gold, 0.3 );
         border-left: 3px solid transparent;
         border-right: 3px solid transparent;
-        @include transitionbasic;
         margin-bottom: $space-super;
 
         &:hover{
-          border-top: 3px solid $color-dark;
-          border-bottom: 3px solid $color-dark;
           border-left: 3px solid transparent;
           border-right: 3px solid transparent;
 
         }
-
-
-      a{
-        color:$color-dark;
-      }
 
 
   }
@@ -425,3 +836,5 @@ nav{
 
 
 //----------------------footer-----------------------//
+
+}
