@@ -448,8 +448,8 @@ nav{
 h1{
   font-size: $title-small;
   color: $letter-light-blue;
-  margin-top:$space-medium;
-  margin-bottom: $space-medium;
+  margin-top:$space-small;
+  margin-bottom: $space-small;
 }
 
 nav{
@@ -470,14 +470,7 @@ nav{
 
   .menupc{
 
-    margin-top: $space-medium;
-    margin-bottom: $space-medium;
-
-    li{
-      margin: auto $min ;
-    }
-
-
+    displaY:none;
 
   }
 }
@@ -641,10 +634,10 @@ nav{
 //-------------------------------------------//
 
 h1{
-  font-size: $title-super;
+  font-size: $title-small;
   color: $letter-light-blue;
-  margin-top:$space-medium;
-  margin-bottom: $space-medium;
+  margin-top:$space-small;
+  margin-bottom: $space-small;
 }
 
 nav{
@@ -665,14 +658,7 @@ nav{
 
   .menupc{
 
-    margin-top: $space-medium;
-    margin-bottom: $space-super;
-
-    li{
-      margin: auto $space-small ;
-    }
-
-
+    displaY:none;
 
   }
 }
@@ -688,7 +674,7 @@ nav{
     margin-top: 0px;
   }
       li{
-        margin:  $space-small auto;
+        margin:  $min auto;
       }
 }
 
@@ -705,29 +691,17 @@ nav{
     form{
 
       input{
-
           border-radius: $supermin;
           border: 3px solid $color-dark;
-          margin-bottom:$space-medium ;
+          margin-bottom:$space-small ;
+          font-size:$letters-small;
       }
 
 
       button{
-        border-radius: $supermin;
-        border-top: 3px solid $color-dark;
-        border-bottom: 3px solid $color-dark;
         padding: $supermin $min;
-        border-left: 3px solid transparent;
-        border-right: 3px solid transparent;
-        color:$color-dark;
-        margin-bottom: $space-super;
-
-        &:hover{
-          border-top: 3px solid transparent;
-          border-bottom: 3px solid transparent;
-        }
-
-
+        margin-bottom: $space-small;
+        font-size:$note-small;
       }
 
     }
@@ -736,77 +710,74 @@ nav{
 
 
   .product-list-tittle{
-    margin-top: $space-super;
-    margin-bottom: $space-super;
+    margin-top: $space-medium;
+    margin-bottom: $space-medium;
 
       h2{
-        font-size: $subtitle-super;
+        font-size: $subtitle-small;
       }
 
   }
 
   .product-list-container{
     width:95%;
+    margin-top: $space-medium;
+    margin-bottom: $space-medium;
 
     p{
-      font-size: $note-super;
+      font-size: $letters-small;
     }
 
     h3{
-      font-size: $letter-meidum;
+      font-size:  $letters-small;
     }
 
     i{
-      font-size: $note-super;
+      font-size: $letters-small;
     }
 
     .product-image{
       img{
         width:80%;
+        margin:auto;
       }
     }
 
     .product-info-container{
-      margin: $space-medium   auto;
+      margin: $space-small   auto;
 
         .tags{
-          margin: $space-small  auto;
+          margin: $min  auto;
+          text-align:center;
         }
 
         .producto-title{
-          margin: $space-small  auto;
+          margin: $min  auto;
+          text-align:center;
         }
 
         .product-price{
-          margin: $space-small  auto;
+          margin: $min  auto;
+          text-align:center;
         }
 
+        .product-value{
+          margin: $min  auto;
+          text-align:center;
+        }
     }
   }
 }
 
-
 .more-products-container{
   button{
-        border-radius: $supermin;
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-        padding: $supermin $min;
-        border-left: 3px solid transparent;
-        border-right: 3px solid transparent;
-        margin-bottom: $space-super;
+        margin-bottom: $space-medium;
 
-        &:hover{
-          border-left: 3px solid transparent;
-          border-right: 3px solid transparent;
-
+        a{
+          font-size:$note-small;
         }
-
-
   }
 }
-
-
 //-----------------------MAIN------------------------//
 
 
@@ -818,24 +789,21 @@ nav{
 //------------------footer-------------------//
 //-------------------------------------------//
 .footer{
-  margin-top: $space-super;
+  margin-top: $space-small;
 
     p{
       margin-bottom: $space-small;
+      font-size:$note-small;
     }
 
     h2{
-      font-size: $letter-meidum;
-      margin-bottom: $space-super;
+      font-size: $letters-small;
+      margin-bottom: $space-small;
     }
 
     .author{
-      margin-top: $space-super;
-
+      margin-top: $space-small;
     }
 }
-
-
 //----------------------footer-----------------------//
-
 }
