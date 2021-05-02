@@ -321,6 +321,8 @@ nav{
   .product-list-container{
     @include flexboxbasic;
     width:95%;
+    margin-top: $space-medium;
+    margin-bottom: $space-medium;
 
     p{
       font-size: $note-super;
@@ -335,6 +337,8 @@ nav{
     }
 
     .product-image{
+      @include flexboxbasic;
+      width:95%;
         max-height:300px;
         max-height:301px;
       img{
@@ -467,10 +471,10 @@ nav{
   .menupc{
 
     margin-top: $space-medium;
-    margin-bottom: $space-super;
+    margin-bottom: $space-medium;
 
     li{
-      margin: auto $space-small ;
+      margin: auto $min ;
     }
 
 
@@ -489,7 +493,7 @@ nav{
     margin-top: 0px;
   }
       li{
-        margin:  $space-small auto;
+        margin:  $min auto;
       }
 }
 
@@ -506,29 +510,17 @@ nav{
     form{
 
       input{
-
           border-radius: $supermin;
           border: 3px solid $color-dark;
-          margin-bottom:$space-medium ;
+          margin-bottom:$space-small ;
+          font-size:$letters-small;
       }
 
 
       button{
-        border-radius: $supermin;
-        border-top: 3px solid $color-dark;
-        border-bottom: 3px solid $color-dark;
         padding: $supermin $min;
-        border-left: 3px solid transparent;
-        border-right: 3px solid transparent;
-        color:$color-dark;
-        margin-bottom: $space-super;
-
-        &:hover{
-          border-top: 3px solid transparent;
-          border-bottom: 3px solid transparent;
-        }
-
-
+        margin-bottom: $space-small;
+        font-size:$note-small;
       }
 
     }
@@ -537,24 +529,26 @@ nav{
 
 
   .product-list-tittle{
-    margin-top: $space-super;
-    margin-bottom: $space-super;
+    margin-top: $space-medium;
+    margin-bottom: $space-medium;
 
       h2{
-        font-size: $title-small;
+        font-size: $subtitle-small;
       }
 
   }
 
   .product-list-container{
     width:95%;
+    margin-top: $space-medium;
+    margin-bottom: $space-medium;
 
     p{
       font-size: $letters-small;
     }
 
     h3{
-      font-size: $subtitle-small;
+      font-size:  $letters-small;
     }
 
     i{
@@ -564,27 +558,35 @@ nav{
     .product-image{
       img{
         width:80%;
+        margin:auto;
       }
     }
 
     .product-info-container{
-      margin: $space-medium   auto;
+      margin: $space-small   auto;
 
         .tags{
-          margin: $space-small  auto;
+          margin: $min  auto;
+          text-align:center;
         }
 
         .producto-title{
-          margin: $space-small  auto;
+          margin: $min  auto;
+          text-align:center;
         }
 
         .product-price{
-          margin: $space-small  auto;
+          margin: $min  auto;
+          text-align:center;
+        }
+
+        .product-value{
+          margin: $min  auto;
+          text-align:center;
         }
     }
   }
 }
-
 
 .more-products-container{
   button{
@@ -595,7 +597,6 @@ nav{
         }
   }
 }
-
 //-----------------------MAIN------------------------//
 
 
