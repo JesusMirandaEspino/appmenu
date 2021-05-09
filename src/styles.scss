@@ -249,6 +249,66 @@ nav{
       }
 
 }
+
+
+//Menu Phone
+.menu-phone{
+
+  position:absolute;
+
+  @include flexboxcolumn;
+  position:fixed;
+  top:6px;
+  left:6px;
+  display:none;
+
+  .menu-phone-icon{
+
+    display:flex;
+    justify-content: start;
+    align-items: start;
+
+    i{
+      font-size: $subtitle-medium;
+      margin-left:15px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      color:$letter-light-gold;
+      @include transitionbasic;
+
+      &:hover{
+      color:$color-icon;
+      }
+    }
+  }
+
+  .menu-phone-background{
+    background-color:$color-dark;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .menu-phone-display{
+    position:relative;
+    left:-600px;
+  }
+
+  .menu-phone-container{
+
+    position:relative;
+    left:-300px;
+
+    a{
+      font-size: $letters-small;
+    }
+  }
+}
+
+
+
+
+
 //-----------------------HEADER------------------------//
 
 
@@ -622,57 +682,7 @@ nav{
 //----------------------footer-----------------------//
 
 .menu-phone{
-
-  position:absolute;
-
-  @include flexboxcolumn;
-  position:fixed;
-  top:6px;
-  left:6px;
-
-  .menu-phone-icon{
-
-    display:flex;
-    justify-content: start;
-    align-items: start;
-
-
-    i{
-      font-size: $subtitle-medium;
-      margin-left:15px;
-      margin-top: 6px;
-      margin-bottom: 6px;
-      cursor: pointer;
-      color:$letter-light-gold;
-      @include transitionbasic;
-
-      &:hover{
-      color:$color-icon;
-      }
-
-    }
-
-
-
-  }
-
-  .menu-phone-background{
-    background-color:$color-dark;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-  }
-
-
-  .menu-phone-container{
-
-    position:relative;
-    left:-300px;
-
-    a{
-      font-size: $letters-small;
-    }
-
-  }
+  display:block;
 
 }
 
@@ -866,4 +876,12 @@ nav{
     }
 }
 //----------------------footer-----------------------//
+
+
+.menu-phone{
+  display:block;
+}
+
+
+
 }
