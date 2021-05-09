@@ -322,7 +322,7 @@ nav{
 
   .product-list-container{
     @include flexboxbasic;
-    width:95%;
+    max-width:95%;
     margin-top: $space-medium;
     margin-bottom: $space-medium;
 
@@ -621,6 +621,25 @@ nav{
 }
 //----------------------footer-----------------------//
 
+.menu-phone{
+
+  background-color:$color-dark;
+  @include flexboxcolumn;
+
+  i{
+    font-size: $subtitle-medium;
+  }
+
+  .menu-phone-container{
+
+    a{
+      font-size: $letters-small;
+    }
+
+  }
+
+}
+
 
 }
 
@@ -679,6 +698,9 @@ nav{
         margin:  $min auto;
       }
 }
+
+
+
 
 //-----------------------HEADER------------------------//
 
