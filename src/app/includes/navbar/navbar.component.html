@@ -15,19 +15,20 @@
 <section class="fila" >
   <nav aria-label="" class="contenedor1" >
 
-    <div   class="col-full-2" >
+    <div   class="col-full-2 col-1 col-tab-big-1" >
     </div>
 
-    <ul  class="col-full-8 menupc" >
+    <ul  class="col-full-8  col-9 col-tab-big-4  col-tab-small-12  menupc" >
         <li><a href="">Order</a></li>
         <li><a href="">New Products</a></li>
         <li><a href="">Location</a></li>
         <li><a href="">Buy now</a></li>
     </ul>
 
-    <div   class="col-full-2 " >
-        <i class="fas fa-cog icon-nav-pc"></i>
+    <div   class="col-full-1  col-2  col-tab-big-3 col-tab-small-12"  >
+        <i class="fas fa-cog icon-nav-pc" (click)="hiddeclass()"  ></i>
     </div>
+
 
   </nav>
 </section>
@@ -35,18 +36,31 @@
 
 
 <!-- Menu users -->
-<section class="fila user-menu" >
+<section class="fila user-menu "  [ngClass]="status ? 'user-menu-activated' : 'user-menu-desactivated'" >
   <nav aria-label="" class="contenedor1" >
 
-    <div   class="col-full-8" >
+    <div   class="col-full-7 col-2  col-tab-big-2" >
     </div>
 
-    <ul  class="col-full-4" >
+    <ul  class="col-full-3 color col-6  col-tab-big-6" >
       <li><a href=""><i class="fas fa-user"></i>  Usuario</a></li>
       <li><a href=""><i class="fas fa-map-marker-alt"></i>  Mis Direcciones </a></li>
       <li><a href=""><i class="fas fa-credit-card"></i>  Mis tarjetas</a></li>
       <li class="close-session"  ><a href=""><i class="fas fa-times-circle"></i>  Cerrar Session</a></li>
     </ul>
+
+      <div   class="col-full-1 col-2  col-tab-big-2 col-tab-small-12 color" >
+        <div class="img-container" >
+          <img src="../../../assets/img/user.png" alt="Avatar">
+        </div>
+
+    </div>
+
+
+      <div   class="col-full-1 col-2  col-tab-big-2 color container-icon" >
+        <i class="fas fa-cog icon-nav-pc"  (click)="hiddeclass()"  ></i>
+      </div>
+
 
 
   </nav>

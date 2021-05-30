@@ -6,6 +6,9 @@
 
 // Feel free to copy&paste color codes to your application */
 
+
+
+
 $color-light: #fff4b6;  //*used
 $color-dark: #024E60;
 
@@ -153,6 +156,10 @@ body{
   }
 }
 
+img{
+  max-width: 100%;
+}
+
 header{
   background-color:$color-dark;
 }
@@ -169,8 +176,16 @@ footer{
 }
 
 
+.main-container{
+  min-height: 400px;
+}
 
-
+label{
+  color:$color-principal-4;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
 
 //-------------------------------------------//
 //-------------------HEADER------------------//
@@ -230,6 +245,20 @@ nav{
     }
   }
 
+  .img-container{
+    @include flexboxbasic;
+    max-width: 40%;
+    border-radius: 50%;
+
+    img{
+      width:80%;
+      margin:auto;
+      border-radius: 50%;
+      display:block;
+
+    }
+
+  }
 
 }
 
@@ -241,15 +270,28 @@ nav{
   right:0;
   @include transitionbasicslow;
 
-  &.activated{
-    margin-top: 0px;
-  }
+
+
+.container-icon{
+  @include flexboxbasic;
+}
+.color{
+background-color:$color-dark;
+}
       li{
         margin:  $space-small auto;
       }
 
 }
 
+
+.user-menu-activated{
+  margin-top: 0px;
+}
+
+.user-menu-desactivated{
+  margin-top: -500px;
+}
 
 //Menu Phone
 .menu-phone{
@@ -514,6 +556,18 @@ h1{
   margin-bottom: $space-small;
 }
 
+.user-menu-activated{
+  margin-top: -500px;
+}
+
+.user-menu-desactivated{
+  margin-top: -500px;
+}
+
+.main-container{
+  min-height: 200px;
+}
+
 nav{
   font-size: $letter-meidum;
 
@@ -546,6 +600,22 @@ nav{
 
   &.activated{
     margin-top: 0px;
+  }
+
+
+  .img-container{
+    @include flexboxbasic;
+    max-width: 40%;
+    border-radius: 50%;
+
+    img{
+      width:80%;
+      margin:auto;
+      border-radius: 50%;
+      display:block;
+
+    }
+
   }
       li{
         margin:  $min auto;
@@ -707,6 +777,18 @@ h1{
   margin-bottom: $space-small;
 }
 
+.user-menu-activated{
+  margin-top: -500px;
+}
+
+.user-menu-desactivated{
+  margin-top: -500px;
+}
+
+.main-container{
+  min-height: 200px;
+}
+
 nav{
   font-size: $letter-meidum;
 
@@ -725,14 +807,31 @@ nav{
 
   .menupc{
 
-    displaY:none;
+    display:none;
+
+  .img-container{
+    @include flexboxbasic;
+    max-width: 40%;
+    border-radius: 50%;
+
+    img{
+      width:80%;
+      margin:auto;
+      border-radius: 50%;
+      display:block;
+
+    }
+
+  }
+
+
 
   }
 }
 
 .user-menu{
   position:fixed;
-  margin-top: -500px;
+  margin-top: -1000px;
   z-index: 99;
   top:0;
   right:0;
@@ -899,6 +998,12 @@ h1{
   color: $letter-light-blue;
   margin-top:$space-small;
   margin-bottom: $space-small;
+}
+
+
+
+.main-container{
+  min-height: 250px;
 }
 
 nav{
@@ -1095,6 +1200,18 @@ h1{
   margin-bottom: $space-small;
 }
 
+.user-menu-activated{
+  margin-top: 0px;
+}
+
+.user-menu-desactivated{
+  margin-top: -500px;
+}
+
+.main-container{
+  min-height: 280px;
+}
+
 nav{
   font-size: $letter-meidum;
 
@@ -1118,6 +1235,15 @@ nav{
   }
 }
 
+
+.user-menu-activated{
+  margin-top: -500px;
+}
+
+.user-menu-desactivated{
+  margin-top: -500px;
+}
+
 .user-menu{
   position:fixed;
   margin-top: -500px;
@@ -1131,6 +1257,22 @@ nav{
       li{
         margin:  $min auto;
       }
+
+  .img-container{
+    @include flexboxbasic;
+    max-width: 40%;
+    border-radius: 50%;
+
+    img{
+      width:80%;
+      margin:auto;
+      border-radius: 50%;
+      display:block;
+
+    }
+  }
+
+
 }
 
 
