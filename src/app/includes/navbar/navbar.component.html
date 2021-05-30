@@ -77,7 +77,7 @@
 
     <div class="col-smarth-2 col-tab-small-2  col-tablet-2 col-tab-big-2 menu-phone-background menu-phone-icon">
 
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" (click)="hiddephoneclass()"   ></i>
 
     </div>
 
@@ -90,7 +90,7 @@
   </div>
 
 
-  <nav aria-label="" class="contenedor1 menu-phone-container "   >
+  <nav aria-label="" class="contenedor1 menu-phone-container    " [ngClass]="phonestatus ? 'menu-phone-ondisplay' : 'menu-phone-offdisplay'"  >
 
 
     <ul  class="col-smarth-7 col-tab-small-7 col-tablet-7 col-tab-big-7 menu-phone-background" >

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   status: boolean = false;
+  phonestatus: boolean = false;
 
   constructor() { }
 
@@ -19,5 +20,9 @@ export class NavbarComponent implements OnInit {
     this.status = !this.status;
 }
 
+
+  hiddephoneclass(){
+    this.phonestatus = !this.phonestatus;
+}
 
 }

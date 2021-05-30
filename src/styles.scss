@@ -331,7 +331,13 @@ background-color:$color-dark;
     border-top-right-radius: 6px;
   }
 
-  .menu-phone-display{
+  .menu-phone-ondisplay{
+    position:relative;
+    left:0px;
+  }
+
+
+  .menu-phone-offdisplay{
     position:relative;
     left:-800px;
   }
@@ -340,6 +346,8 @@ background-color:$color-dark;
 
     position:relative;
     left:-800px;
+
+    @include transitionbasic;
 
     a{
       font-size: $letters-small;
@@ -622,6 +630,19 @@ nav{
       }
 }
 
+
+
+  .menu-phone-ondisplay{
+    position:relative;
+    left:0px;
+  }
+
+
+  .menu-phone-offdisplay{
+    position:relative;
+    left:-800px;
+  }
+
 //-----------------------HEADER------------------------//
 
 
@@ -831,7 +852,7 @@ nav{
 
 .user-menu{
   position:fixed;
-  margin-top: -1000px;
+  margin-top: -500px;
   z-index: 99;
   top:0;
   right:0;
@@ -842,6 +863,24 @@ nav{
       li{
         margin:  $min auto;
       }
+}
+
+
+.menu-phone{
+  display:block;
+
+
+  .menu-phone-ondisplay{
+    position:relative;
+    left:0px;
+  }
+
+
+  .menu-phone-offdisplay{
+    position:relative;
+    left:-800px;
+  }
+
 }
 
 
@@ -1045,6 +1084,22 @@ nav{
 }
 
 
+.menu-phone{
+  display:block;
+
+  .menu-phone-ondisplay{
+    position:relative;
+    left:0px;
+  }
+
+
+  .menu-phone-offdisplay{
+    position:relative;
+    left:-800px;
+  }
+
+
+}
 
 
 //-----------------------HEADER------------------------//
@@ -1275,7 +1330,21 @@ nav{
 
 }
 
+.menu-phone{
+  display:block;
 
+  .menu-phone-ondisplay{
+    position:relative;
+    left:0px;
+  }
+
+
+  .menu-phone-offdisplay{
+    position:relative;
+    left:-800px;
+  }
+
+}
 
 
 //-----------------------HEADER------------------------//
