@@ -16,11 +16,18 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
 
 
-    this.foodServices.getfood().subscribe(  (food ) => {
+
+
+  }
+
+
+  buscar(food: string): void{
+
+    this.foodServices.getfood(food).subscribe(  (food ) => {
 
       this.menuItems = food.menuItems;
 
-      console.log(  this.menuItems );
+      console.log(  'hola' );
     } );
 
   }

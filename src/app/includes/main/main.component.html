@@ -5,10 +5,10 @@
       <div class="col-full-12 col-smarth-12 col-tab-small-12 col-tablet-12 col-tab-big-12 search-container" >
 
         <form action="">
-          <label for=""></label>
-          <input type="text" name="" id="">
+          <label for="food">Buscar Comida</label>
+          <input #food type="text"  (keyup)="buscar(food.value)" name="food" id=""  >
 
-          <button>Buscar</button>
+        <!-- <button  (onClick)="buscar(food.value)" >Buscar</button> -->
 
         </form>
       </div>
@@ -23,7 +23,7 @@
           <li><!--  Product list   --->
 
             <div class="product-image">
-              <img [src]=" item.image " alt="No image">
+              <img [src]=" item.image " alt="No se encontro alguna imagen relacionada">
             </div>
 
             <div class="product-info-container">
